@@ -10221,12 +10221,16 @@ Error message and password prompt
     }
 }</pre>
 </div>
-<div created="20210621105324435" modified="20210622134556720" tags="" title="Active Projects">
+<div created="20210621105324435" modified="20210630123304489" tags="" title="Active Projects">
 <pre>! dart_lnd
 Dart library for talking to a Lightning Network node
 
 * [[Creating a Dart Package]]
 * [[Generating gRPC client files from .proto files]]
+
+... I started this not realising that all anyone ever needs is the protobuf file describing
+the service. I'm not sure what extra value a client library would add, so I might end up
+abandoning this project.
 
 !! Useful Links
 
@@ -10237,7 +10241,11 @@ Dart library for talking to a Lightning Network node
 !!! LND RPC
 Links to v0.13.0-beta RPC proto files
 
-* [[rpc.proto|https://github.com/lightningnetwork/lnd/blob/725ff104808f49f0a5247bfdb4b6b5da7f488d38/lnrpc/rpc.proto]]</pre>
+* [[rpc.proto|https://github.com/lightningnetwork/lnd/blob/725ff104808f49f0a5247bfdb4b6b5da7f488d38/lnrpc/rpc.proto]]
+
+
+! flutter_lnd_explorer
+A flutter web application for experimenting with Lightning's RPC API</pre>
 </div>
 <div created="20210621104120287" modified="20210621104730037" tags="" title="Creating a Dart Package">
 <pre>I'm busy creating a package called [[dart_lnd]], to be used by Dart and Flutter apps that want to talk to a Lightning Network node.
